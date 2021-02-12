@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="fundamental.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <title>Naufal Fadhil | Flex Box</title>
+    </head>
+
+    <body>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="img/nexat-logo.png" width="25" alt="Nexat Indonesia Logo" class="mb-1 me-1">
+                    Naufal Fadhil
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Fundamental
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="fundamental.html#flex-wrap">Flex Wrap</a></li>
+                            <li><a class="dropdown-item" href="fundamental.html#justify-content">Justify Content</a></li>
+                            <li><a class="dropdown-item" href="fundamental.html#align-items">Align Items</a></li>
+                            <li><a class="dropdown-item" href="fundamental.html#align-content">Align Content</a></li>
+                            <li><a class="dropdown-item" href="fundamental.html#order">Order</a></li>
+                            <li><a class="dropdown-item" href="fundamental.html#flex-grow">Flex Grow</a></li>
+                            <li><a class="dropdown-item" href="fundamental.html#align-self">Align Self</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Training
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                            <li><a class="dropdown-item" href="practice.html#container-satu">Article</a></li>
+                            <li><a class="dropdown-item" href="practice.html#container-dua">Service</a></li>
+                            <li><a class="dropdown-item" href="practice.html#container-tiga">Galery</a></li>
+                            <li><a class="dropdown-item" href="practice.html#container-empat">Card</a></li>
+                            <li><a class="dropdown-item" href="practice.html#container-lima">Box Center</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    <div class="container2">
+        <h1 id="">PROPERTY on CONTAINER</h1>
+        <!-- START FLEX-WRAP -->
+        <h2 id="flex-wrap">FLEX WRAP</h2>
+        <div>
+            <h3>Flex wrap: nowrap</h3>
+            <div class="flex-wrap nowrap">
+                <div class="satu">1</div>
+                <div class="dua">2</div>
+                <div class="tiga">3</div>
+                <div class="empat">4</div>
+                <div class="lima">5</div>
+                <div class="enam">6</div>
+            </div>
+            <h3>Flex wrap: wrap</h3>
+            <div class="flex-wrap wrap">
+                <div class="satu">1</div>
+                <div class="dua">2</div>
+                <div class="tiga">3</div>
+                <div class="empat">4</div>
+                <div class="lima">5</div>
+                <div class="enam">6</div>
+            </div>
+            <h3>Flex Wrap: wrap-reverse</h3>
+            <div class="flex-wrap wrap-reverse">
+                <div class="satu">1</div>
+                <div class="dua">2</div>
+                <div class="tiga">3</div>
+                <div class="empat">4</div>
+                <div class="lima">5</div>
+                <div class="enam">6</div>
+            </div>
+        </div>
+        <!-- END FLEX-WRAP -->
+        <hr>
+        <!-- START JUSTIFY-CONTENT -->
+        <h2 id="justify-content">JUSTIFY CONTENT</h2>
+        <div id="justify-content">
+            <h3>Justify Content: flex-start</h3>
+            <div class="justify-content flex-start">
+                <div class="satu">1</div>
+                <div class="dua">2</div>
+                <div class="tiga">3</div>
+            </div>
+            <h3>Justify Content: flex-end</h3>
+            <div class="justify-content flex-end">
+                <div class="satu">1</div>
+                <div class="dua">2</div>
+                <div class="tiga">3</div>
+            </div>
+            <h3>Justify Content: center</h3>
+            <div class="justify-content center">
+                <div class="satu">1</div>
+                <div class="dua">2</div>
+                <div class="tiga">3</div>
+            </div>
+            <h3>Justify Content: space-between</h3>
+            <div class="justify-content space-between">
+                <div class="satu">1</div>
+                <div class="dua">2</div>
+                <div class="tiga">3</div>
+            </div>
+            <h3>Justify Content: space-around</h3>
+            <div class="justify-content space-around">
+                <div class="satu">1</div>
+                <div class="dua">2</div>
+                <div class="tiga">3</div>
+            </div>
+            <h3>Justify Content: space-evenly</h3>
+            <div class="justify-content space-evenly">
+                <div class="satu">1</div>
+                <div class="dua">2</div>
+                <div class="tiga">3</div>
+            </div>
+        </div>
+        <!-- END JUSTIFY-CONTENT -->
+        <hr>
+        <h2 id="align-items">ALIGN ITEMS</h2>
+        <!-- START ALIGN-ITEMS -->
+        <div id="align-items">
+            <h3>Align Items: flex-start</h3>
+            <div class="align-items flex-start">
+                <div class="satu">1</div>
+                <div class="dua">2</div>
+                <div class="tiga">3</div>
+                <div class="empat">4</div>
+            </div>
+            <h3>Align Items: flex-end</h3>
+            <div class="align-items flex-end">
+                <div class="satu">1</div>
+                <div class="dua">2</div>
+                <div class="tiga">3</div>
+                <div class="empat">4</div>
+            </div>
+            <h3>Align Items: center</h3>
+            <div class="align-items center">
+                <div class="satu">1</div>
+                <div class="dua">2</div>
+                <div class="tiga">3</div>
+                <div class="empat">4</div>
+            </div>
+            <h3>Align Items: stretch</h3>
+            <div class="align-items stretch">
+                <div class="satu">1</div>
+                <div class="dua">2</div>
+                <div class="tiga">3</div>
+                <div class="empat">4</div>
+            </div>
+            <h3>Align Items: baseline</h3>
+            <div class="align-items baseline">
+                <div class="satu">1</div>
+                <div class="dua">2</div>
+                <div class="tiga">3</div>
+                <div class="empat">4</div>
+            </div>
+        </div>
+        <!-- END ALIGN-ITEMS -->
+        <hr>
+        <!-- START ALIGN-CONTENT -->
+        <div>
+            <h2 id="align-content">ALIGN CONTENT</h2>
+            <h3>Align Content: flex-start</h3>
+            <div class="align-content flex-start">
+                <div class="satu">1</div>
+                <div class="dua">2</div>
+                <div class="tiga">3</div>
+                <div class="empat">4</div>
+                <div class="lima">5</div>
+                <div class="enam">6</div>
+                <div class="tujuh">7</div>
+                <div class="delapan">8</div>
+                <div class="sembilan">9</div>
+                <div class="sepuluh">10</div>
+            </div>
+            <h3>Align Content: flex-end</h3>
+            <div class="align-content flex-end">
+                <div class="satu">1</div>
+                <div class="dua">2</div>
+                <div class="tiga">3</div>
+                <div class="empat">4</div>
+                <div class="lima">5</div>
+                <div class="enam">6</div>
+                <div class="tujuh">7</div>
+                <div class="delapan">8</div>
+                <div class="sembilan">9</div>
+                <div class="sepuluh">10</div>
+            </div>
+            <h3>Align Content: center</h3>
+            <div class="align-content center">
+                <div class="satu">1</div>
+                <div class="dua">2</div>
+                <div class="tiga">3</div>
+                <div class="empat">4</div>
+                <div class="lima">5</div>
+                <div class="enam">6</div>
+                <div class="tujuh">7</div>
+                <div class="delapan">8</div>
+                <div class="sembilan">9</div>
+                <div class="sepuluh">10</div>
+            </div>
+            <h3>Align Content: stretch</h3>
+            <div class="align-content stretch">
+                <div class="satu">1</div>
+                <div class="dua">2</div>
+                <div class="tiga">3</div>
+                <div class="empat">4</div>
+                <div class="lima">5</div>
+                <div class="enam">6</div>
+                <div class="tujuh">7</div>
+                <div class="delapan">8</div>
+                <div class="sembilan">9</div>
+                <div class="sepuluh">10</div>
+            </div>
+            <h3>Align Content: space-between</h3>
+            <div class="align-content space-between">
+                <div class="satu">1</div>
+                <div class="dua">2</div>
+                <div class="tiga">3</div>
+                <div class="empat">4</div>
+                <div class="lima">5</div>
+                <div class="enam">6</div>
+                <div class="tujuh">7</div>
+                <div class="delapan">8</div>
+                <div class="sembilan">9</div>
+                <div class="sepuluh">10</div>
+            </div>
+            <h3>Align Content: space-around</h3>
+            <div class="align-content space-around">
+                <div class="satu">1</div>
+                <div class="dua">2</div>
+                <div class="tiga">3</div>
+                <div class="empat">4</div>
+                <div class="lima">5</div>
+                <div class="enam">6</div>
+                <div class="tujuh">7</div>
+                <div class="delapan">8</div>
+                <div class="sembilan">9</div>
+                <div class="sepuluh">10</div>
+            </div>
+        </div>
+        <!-- END ALIGN-CONTENT -->
+
+        <hr><hr>
+        <h1>PROPERTY on ITEM</h1>
+        <h2 id="order">ORDER</h2>
+        <!-- START ORDER -->
+        <div class="order">
+            <div class="satu">1</div>
+            <div class="dua">2</div>
+            <div class="tiga">3</div>
+            <div class="empat">4</div>
+        </div>
+        <!-- END ORDER -->
+
+        <hr>
+        <!-- START FLEX-GROW -->
+        <h2 id="flex-grow">FLEX GROW</h2>
+        <div class="flex-grow">
+            <div class="satu">1</div>
+            <div class="dua">2</div>
+            <div class="tiga">3</div>
+            <div class="empat">4</div>
+        </div>
+        <!-- START FLEX-GROW -->
+
+        <!-- START ALIGN-SELF -->
+        <hr>
+        <h2 id="align-self">ALIGN SELF</h2>
+        <div class="align-self">
+            <div class="satu">1</div>
+            <div class="dua">2</div>
+            <div class="tiga">3</div>
+            <div class="empat">4</div>
+            <div class="lima">5</div>
+        </div>
+        <!-- START ALIGN-SELF -->
+    </div>
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+        -->
+    </body>
+</html>

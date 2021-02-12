@@ -1,0 +1,188 @@
+html,
+body,
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ddd;
+    line-height: 1.65;
+    padding-bottom: 100px;
+
+}
+
+
+/* LATIHAN 1 */
+.container-satu {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    /* AGAR UKURAN KOTAK TIDAK BERUBAH */
+    box-sizing: border-box;
+    display: flex;
+}
+
+.kolom-utama {
+    /* MENSET UKURAN */
+    flex: 3;
+    order: 2;
+}
+
+.sidebar-satu {
+    flex: 1;
+    order: 1;
+}
+
+.sidebar-dua {
+    flex: 1;
+    order: 3;
+}
+
+/* AKHIR LATIHAN 1 */
+
+
+/* LATIHAN 2 */
+.container-dua {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.layanan {
+    padding: 20px;
+    /* TIDAK MERUBAH UKURAN KOTAK */
+    box-sizing: border-box;
+}
+
+/* CSS CARIKAN SAYA YANG MEMILIKI DUA CLASS */
+.layanan.satu {
+    background-color: skyblue;
+}
+
+.layanan.dua {
+    background-color: greenyellow;
+}
+
+.layanan.tiga {
+    background-color: rgb(255, 67, 67);
+}
+
+/* LATIHAN 3 */
+.container-tiga {
+    max-width: 800px;
+    margin: 50px auto;
+    /* GAMBAR KE SAMPING KANAN */
+    display: flex;
+    /* GAMBAR KE BAWAH */
+    flex-wrap: wrap;
+    /* GAMBAR DI TENGAH */
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 50%;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+/* LATIHAN 3 */
+
+/* LATIHAN 4 */
+.container-empat {
+    max-width: 800px;
+    margin: 50px auto;
+    /* CARD KE ARAH SAMPING */
+    display: flex;
+}
+
+.card {
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    background-color: #eee;
+    /* KASIH OVERFLOW BIAR NGUMPET */
+    overflow: hidden;
+    /* MEMBERI JARAK ANTAR CARD */
+    margin: 10px;
+    /* AGAR YAKIN UKURANNYA SAMA TIAP CARD */
+    flex: 1;
+}
+
+.card .header {
+    height: 150px;
+    background-color: #666;
+}
+
+.card .content {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* UKURAN BEDA DARI YANG LAIN */
+.card.besar {
+    transform: scale(1.12);
+}
+
+/* LATIHAN 4 */
+
+
+/* LATIHAN 5 */
+.container-lima {
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    border: 5px solid black;
+    display: flex;
+}
+
+.kotak {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    color: white;
+    text-align: center;
+
+    /* line-height: 100px; 
+    margin: 250px auto;
+    transform: translateY(-50px); */
+
+    /* MENGGUNAKAN DISPLAY FLEX */
+    margin: auto;
+
+    /* UNTUK TULISAN */
+    display: flex;
+}
+
+.kotak span {
+    margin: auto;
+}
+
+
+/* LATIHAN 5 */
+
+
+
+
+/* KELAS RESPONSIVE */
+@media(min-width: 600px) {
+    .container-dua {
+        /* AGAR KONTEN BERJAJAR HORIZONTAL */
+        display: flex;
+        margin: 50px auto;
+        /* GAFA00 */
+        justify-content: space-between;
+    }
+
+    .layanan {
+        width: 30%;
+    }
+
+    .thumbnail {
+        width: 25%;
+    }
+}
